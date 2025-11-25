@@ -1,0 +1,1 @@
+    if (totalPrice >= 300) {
