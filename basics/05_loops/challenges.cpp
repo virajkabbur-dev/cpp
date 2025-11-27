@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <iterator>
 
 using namespace std;
 
@@ -68,18 +69,17 @@ void teaChecker(){
 void teaWeekScheduler(){
 
     string week[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    string meals[3] = {"breakfast", "lunch", "dinner"};
 
     for (int i = 0; i < 7; i++)
     {
+        cout << "\n";
         cout << "Day - " << week[i] << endl;
+        cout << "\n";
 
-        for (int j = 0; j < 1; j++)
+        for (int j = 0; j < 3; j++)
         {
-            cout << "2 cups have been brewed for breakfast" << endl;
-            cout << "2 cups have been brewed for lunch" << endl;
-            cout << "2 cups have been brewed for dinner" << endl;
-
-            cout << "\n";
+            cout << "1 cup has been brewed for " << meals[j] << endl;
         }
         
     }
@@ -94,6 +94,11 @@ int main() {
     // teaChecker();
     teaWeekScheduler();
 
+    // for (int i = arr.length(); i < count; i++)
+    // {
+    //     /* code */
+    // }
     return 0;
+
 
 }
